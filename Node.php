@@ -102,7 +102,7 @@ class Node
         }
         return false;
     }
-    public function countSide($node) //считает количество узлов в левой ветке
+    private function countSide($node) //считает количество узлов в левой ветке
     {
         if ($node->key === null) {
             return null;
@@ -118,7 +118,7 @@ class Node
         return $left;
     }
 
-    public function checkBalance($node) //проверяет разницу количества правого и левого узла
+    private function checkBalance($node) //проверяет разницу количества правого и левого узла
     {
         $countR = 0;
         $countL = 0;
